@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="48a298be-d033-440c-92cf-295e446be465">
+		<Properties>
+			<Name>ктв_сб_События</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление событиями</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>0</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ктв_сб_События</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ктв_сб_СобытияОбработчики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ктв_сб_События</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_События</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_СобытияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_СобытияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияДокументыПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеОбъектыКромеДокументовПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ктв_сб_СобытияТочкиВозникновения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ктв_сб_СобытияНазначенныеОбработчики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ктв_сб_СобытияОбработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_СобытияГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_ОбработкиОбслуживания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_ОбработкиОбслуживанияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_ОбработкиОбслуживанияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ктв_сб_СобытияОбновлениеИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеОбъектыПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеОбъектыПередУдалением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеОбъектыОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеОбъектыОбработкаПроверкиЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияДокументыОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияДокументыОбработкаУдаленияПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияБизнессПроцессыЗадачиОбработкаИнтерактивнойАктивации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияЗадачиОбработкаПроверкиВыполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияЗадачиПередВыполнением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияЗадачиПередИнтерактивнымВыполнением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияЗадачиПриВыполнении</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеНаборыЗаписейОбработкаПроверкиЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеНаборыЗаписейКромеРегистраРасчетовПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеНаборыЗаписейКромеРегистраРасчетовПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияРегистрыСведенийОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ктв_сб_СобытияПроверка_УниверсальнаяПроверка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ктв_сб_СобытияОбработчик_УниверсальныйОбработчик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ктв_сб_СобытияОбработкаНаКлиенте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ктв_сб_СобытияВсеОбъектыПриКопировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ктв_сб_СобытияУдалениеОбработанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ктв_сб_ЗарегистрироватьСобытие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.ktb_EventHub</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="7309e58d-b0d4-4e0f-a74d-68cab03fea8e">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:d0106f3a-8490-4277-a278-75c318ec252c">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="da2b47f5-4109-4f72-a4a5-70be24a6881f">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:c264441d-4805-4968-baa2-37b8970049c7">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="7d069b11-cddd-463d-97be-3cbeaaf0954c">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:782cb93d-36e6-4923-b2b6-75caa3459cd6">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="08cecb6f-478b-4645-9067-4f0e02a86171">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:0a136ad9-22ad-4ba7-a31a-40a193b49d26">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="08cecb6f-478b-4645-9067-4f0e02a86171">true</xr:Value>
+				<xr:Value name="0cbe6083-e3a0-4140-ab6b-5f5f034c1295">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:60aaa289-1f07-438c-8f10-81058ac671c3">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:10543f9a-4e3f-427a-b36a-9c66709dd6fb">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:0adf02da-940a-4bfc-afa5-59605494a169">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="3f3a0b1b-04ce-47c1-928d-5e3483e9fd73">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:92707138-5004-4378-8477-f909166d319d">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="4a008342-f72f-4ca1-bad1-64b59b509911">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:876e31ff-ab7b-4ea4-b491-161963727dd1">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="7e84901c-cb7f-437c-a135-0902cd47acb6">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:be7d6af6-dd09-4fdf-9a4e-595331854f78">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:92876c9e-52ff-480d-9878-5766f4f9d12c">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="b68ec95b-64f3-4a2b-9683-231d50f01eeb">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:679cc0df-df5c-4c33-8c64-c0b6cee39116">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="8692ba41-d91d-4af0-8aba-69dd5409d593">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:6ddc408a-18ef-4b35-8242-26c2ef5ca3e8">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:204289fb-4b0b-4967-acc7-b011c9ccb3f1">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="74757510-55b7-4213-85bb-176755d28b22">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:02fa8b71-2c04-44ad-bcee-33a1cce5bfd1">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="74757510-55b7-4213-85bb-176755d28b22">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:d912e472-9553-4b96-8b16-7aaff6c14239">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:52f4453e-e968-4290-a79a-470f68fbd07f">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:5b952e35-1037-4447-8293-6d8889692c8b">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:38fc1e6e-7cd3-437b-b429-6655be34cd01">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="497ce8f3-f6f0-4da8-aeb0-0fa01bb26dc6">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:30845df5-b4f1-4f6a-997c-1b99dfb0e5d5">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:cb9b73ee-8531-48d9-9266-9aaa4336a612">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="b68ec95b-64f3-4a2b-9683-231d50f01eeb">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:a2782760-dd4c-44d2-a785-814d6f610455">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="7309e58d-b0d4-4e0f-a74d-68cab03fea8e">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:cb7c189d-eb29-4cbb-a86c-81c12b5ef481">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:e0cfe1c0-054e-4289-add3-6e5bce6ef3a6">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:f213e982-5b57-444f-8fa3-c1a7ea14b3ef">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="62a73a94-605c-415b-ad3d-1d06cdded4c0">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:eb954f32-e40d-493d-bdb4-1166b5742ce3">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="62a73a94-605c-415b-ad3d-1d06cdded4c0">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:023d747d-4ac1-4e0e-9de1-76bdc4f74d8b">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:27363ec4-6822-4db6-ae2e-c161bd247ae9">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="ff8961dd-5953-4811-aff8-a887565a2778">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:f0347cbb-bf80-4b33-92b1-19907085b9a5">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="89ab9c80-cd3c-43f8-beea-e68215b09760">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:a9d2dc97-1885-4c3f-b32e-62f45cc4f3f4">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="89ab9c80-cd3c-43f8-beea-e68215b09760">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:f2c86b3a-c320-49d0-b1d7-d83f6a92b8ee">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="89ab9c80-cd3c-43f8-beea-e68215b09760">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:38b773d7-0997-459e-9f6f-9da668377e7a">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="89ab9c80-cd3c-43f8-beea-e68215b09760">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:cd454738-62dd-4f95-af33-b52750678428">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:bed3f0b2-40c6-4323-9bca-cb8864e38ec0">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:f31f3dab-5796-47ac-a54d-3081f8cad817">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:6b2340d7-687f-43a3-8eb8-8ddb86712466">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:91941f81-07dd-43a0-9baa-f5969b7472db">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="b1d89099-82b2-42d0-be0f-85c08029837e">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:12f85e09-1190-4483-b531-630ab718db7f">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="bfca543a-4656-4fab-babc-bde258529dcc">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:a22d1a4f-cb7c-4bcc-b258-ecca282fb071">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:f480ac52-e2f1-4ed0-a0b1-20a622f77302">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:239601eb-e8de-4d58-a32a-01ee52f6e698">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:8e755ce0-c571-4ed5-b0bb-9470edcb7c73">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:f1d9c77a-8a00-4558-bf48-baf2618356f5">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:e76f1009-eab5-40c3-9e34-29e57f92d6d3">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:085cbea9-1df1-4ee9-afb7-da2bf313697e">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:3177a598-c693-4f5e-880e-15d687643cd0">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:e641fe3a-58da-4318-ba66-262799f5bf00">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:f4e9fb52-a0aa-4f17-ba33-d04614bd6e25">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:d0106f3a-8490-4277-a278-75c318ec252c">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:c264441d-4805-4968-baa2-37b8970049c7">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:02fa8b71-2c04-44ad-bcee-33a1cce5bfd1">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:f0347cbb-bf80-4b33-92b1-19907085b9a5">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:a9d2dc97-1885-4c3f-b32e-62f45cc4f3f4">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:f2c86b3a-c320-49d0-b1d7-d83f6a92b8ee">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:38b773d7-0997-459e-9f6f-9da668377e7a">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:cd454738-62dd-4f95-af33-b52750678428">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:bed3f0b2-40c6-4323-9bca-cb8864e38ec0">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:f31f3dab-5796-47ac-a54d-3081f8cad817">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:6b2340d7-687f-43a3-8eb8-8ddb86712466">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:91941f81-07dd-43a0-9baa-f5969b7472db">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:12f85e09-1190-4483-b531-630ab718db7f">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:f1d9c77a-8a00-4558-bf48-baf2618356f5">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:e76f1009-eab5-40c3-9e34-29e57f92d6d3">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:085cbea9-1df1-4ee9-afb7-da2bf313697e">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:3177a598-c693-4f5e-880e-15d687643cd0">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:e641fe3a-58da-4318-ba66-262799f5bf00">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:f4e9fb52-a0aa-4f17-ba33-d04614bd6e25">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="0:d0106f3a-8490-4277-a278-75c318ec252c">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="0:c264441d-4805-4968-baa2-37b8970049c7">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="0:782cb93d-36e6-4923-b2b6-75caa3459cd6">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:0a136ad9-22ad-4ba7-a31a-40a193b49d26">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:60aaa289-1f07-438c-8f10-81058ac671c3">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:10543f9a-4e3f-427a-b36a-9c66709dd6fb">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:0adf02da-940a-4bfc-afa5-59605494a169">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:92707138-5004-4378-8477-f909166d319d">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:876e31ff-ab7b-4ea4-b491-161963727dd1">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:be7d6af6-dd09-4fdf-9a4e-595331854f78">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:92876c9e-52ff-480d-9878-5766f4f9d12c">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:679cc0df-df5c-4c33-8c64-c0b6cee39116">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:6ddc408a-18ef-4b35-8242-26c2ef5ca3e8">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:204289fb-4b0b-4967-acc7-b011c9ccb3f1">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:02fa8b71-2c04-44ad-bcee-33a1cce5bfd1">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:d912e472-9553-4b96-8b16-7aaff6c14239">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:52f4453e-e968-4290-a79a-470f68fbd07f">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:5b952e35-1037-4447-8293-6d8889692c8b">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:38fc1e6e-7cd3-437b-b429-6655be34cd01">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:30845df5-b4f1-4f6a-997c-1b99dfb0e5d5">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:cb9b73ee-8531-48d9-9266-9aaa4336a612">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:a2782760-dd4c-44d2-a785-814d6f610455">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:cb7c189d-eb29-4cbb-a86c-81c12b5ef481">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:e0cfe1c0-054e-4289-add3-6e5bce6ef3a6">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:f213e982-5b57-444f-8fa3-c1a7ea14b3ef">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:eb954f32-e40d-493d-bdb4-1166b5742ce3">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:023d747d-4ac1-4e0e-9de1-76bdc4f74d8b">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:27363ec4-6822-4db6-ae2e-c161bd247ae9">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:f0347cbb-bf80-4b33-92b1-19907085b9a5">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:a9d2dc97-1885-4c3f-b32e-62f45cc4f3f4">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:f2c86b3a-c320-49d0-b1d7-d83f6a92b8ee">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:38b773d7-0997-459e-9f6f-9da668377e7a">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:cd454738-62dd-4f95-af33-b52750678428">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:bed3f0b2-40c6-4323-9bca-cb8864e38ec0">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:f31f3dab-5796-47ac-a54d-3081f8cad817">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:6b2340d7-687f-43a3-8eb8-8ddb86712466">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:91941f81-07dd-43a0-9baa-f5969b7472db">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:12f85e09-1190-4483-b531-630ab718db7f">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:dd9b1a7c-3cd1-4e56-83b5-53bddd126e57">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:2a479b8f-7569-43d0-8ca3-9001d6ec57f0">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:16aafed9-ac0d-424f-93e5-01d77dcb7796">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:f3750ea4-5f9e-4ab3-9495-3f182ecff407">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:7dca913d-e37a-4740-8e3d-677d379605ee">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:adf9a16f-3ed5-4ec0-a866-8ffe36ef1c88">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:34ba5be4-6a22-47b0-a034-b4b89bbf5070">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:0ec0b1a0-5f0d-4a14-9a84-49098befa0af">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:a22d1a4f-cb7c-4bcc-b258-ecca282fb071">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:f480ac52-e2f1-4ed0-a0b1-20a622f77302">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:239601eb-e8de-4d58-a32a-01ee52f6e698">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:8e755ce0-c571-4ed5-b0bb-9470edcb7c73">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:3326bbcb-b277-44db-a252-2448119e8146">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:4a749e8c-cb35-4bc4-9b31-fb5bc0eab474">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="100:e09534e3-ac6e-42a6-86e8-564acb20089a">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:d7dd9a03-6818-4987-8f39-58e1c906569f">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:d8e62f1a-92ca-4971-9609-e79da798c083">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:d03f66b1-48a3-434b-bb58-9fd53c183514">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:899976d0-2840-4925-81b1-adf6b421841e">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:7acb6e86-8a5b-4ed6-bc6d-c08cde2e2d39">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:a9adf464-7536-4a70-b2c8-5b9c3fec8f4e">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:a469e55e-d7ca-4c27-b350-fafe7364c18f">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:a3b7b4bc-bb64-4c6c-b70a-bed54174c857">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:538e2ecb-2849-4c77-bf0b-23236bd85441">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:6e64ad20-b5c9-43aa-b3b4-383b5d0ca489">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:c74099c7-dd66-4f41-9063-cebb391a6625">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:162137ef-dea2-4ace-9e67-897dad0e7c3d">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:c0f9abf0-1958-4359-a63a-6ae78f06a23e">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="100:a807657e-5157-4512-92d8-f357b48bb652">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="100:1de4c652-3c98-424f-9e0a-92ddc043a66a">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:d27b19f1-07e8-4af2-b6a0-568f6653d27f">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="100:ff27535d-5b28-457c-a709-2622d4de7046">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:f1d9c77a-8a00-4558-bf48-baf2618356f5">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+		<Command name="0:e76f1009-eab5-40c3-9e34-29e57f92d6d3">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+		<Command name="0:085cbea9-1df1-4ee9-afb7-da2bf313697e">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+		<Command name="0:0a5755cb-084d-4e5c-8ebd-6d4810be0228">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+		<Command name="0:3177a598-c693-4f5e-880e-15d687643cd0">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+		<Command name="0:e641fe3a-58da-4318-ba66-262799f5bf00">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+		<Command name="0:f4e9fb52-a0aa-4f17-ba33-d04614bd6e25">
+			<CommandGroup>00000000-0000-0000-0000-000000000000</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>00000000-0000-0000-0000-000000000000</Group>
+	</GroupsOrder>
+</CommandInterface>

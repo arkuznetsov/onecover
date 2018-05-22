@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТочкаВозникновения" id="1">
+			<DataPath>Запись.ТочкаВозникновения</DataPath>
+			<ContextMenu name="ТочкаВозникновенияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТочкаВозникновенияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Ид" id="4">
+			<DataPath>Запись.Ид</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИдКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИдРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаМоментСобытия" id="96">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа момент события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа момент события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМоментСобытияРасширеннаяПодсказка" id="97"/>
+			<ChildItems>
+				<InputField name="Дата" id="7">
+					<DataPath>Запись.Дата</DataPath>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Момент" id="10">
+					<DataPath>Запись.Момент</DataPath>
+					<ContextMenu name="МоментКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="МоментРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<CheckBoxField name="Ошибка" id="126">
+					<DataPath>Запись.Ошибка</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОшибкаКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ОшибкаРасширеннаяПодсказка" id="128"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Событие" id="13">
+			<DataPath>Запись.Событие</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СобытиеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СобытиеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="ГруппаИсточник" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа источник</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа источник</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИсточникРасширеннаяПодсказка" id="99"/>
+			<ChildItems>
+				<InputField name="ТипИсточника" id="16">
+					<DataPath>Запись.ТипИсточника</DataPath>
+					<ContextMenu name="ТипИсточникаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТипИсточникаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Источник" id="19">
+					<DataPath>Запись.Источник</DataPath>
+					<ContextMenu name="ИсточникКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Пользователь" id="22">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<Pages name="ГруппаОбработка" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаОбработкаРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Page name="ГруппаПараметрыСобытия" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры события</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры события</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПараметрыСобытияРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<Table name="ПараметрыСобытия" id="102">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>ПараметрыСобытия</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПараметрыСобытияКонтекстноеМеню" id="103"/>
+							<AutoCommandBar name="ПараметрыСобытияКоманднаяПанель" id="104">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПараметрыСобытияРасширеннаяПодсказка" id="105"/>
+							<SearchStringAddition name="ПараметрыСобытияСтрокаПоиска" id="106">
+								<AdditionSource>
+									<Item>ПараметрыСобытия</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыСобытияСтрокаПоискаКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="ПараметрыСобытияСтрокаПоискаРасширеннаяПодсказка" id="108"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыСобытияСостояниеПросмотра" id="109">
+								<AdditionSource>
+									<Item>ПараметрыСобытия</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыСобытияСостояниеПросмотраКонтекстноеМеню" id="110"/>
+								<ExtendedTooltip name="ПараметрыСобытияСостояниеПросмотраРасширеннаяПодсказка" id="111"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыСобытияУправлениеПоиском" id="112">
+								<AdditionSource>
+									<Item>ПараметрыСобытия</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыСобытияУправлениеПоискомКонтекстноеМеню" id="113"/>
+								<ExtendedTooltip name="ПараметрыСобытияУправлениеПоискомРасширеннаяПодсказка" id="114"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПараметрыСобытияПараметр" id="118">
+									<DataPath>ПараметрыСобытия.Параметр</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыСобытияПараметрКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ПараметрыСобытияПараметрРасширеннаяПодсказка" id="120"/>
+								</LabelField>
+								<InputField name="ПараметрыСобытияЗначение" id="115">
+									<DataPath>ПараметрыСобытия.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="ПараметрыСобытияЗначениеКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ПараметрыСобытияЗначениеРасширеннаяПодсказка" id="117"/>
+									<Events>
+										<Event name="Opening">ПараметрыСобытияЗначениеОткрытие</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбработкаСервер" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Сервер)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Сервер)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбработкаСерверРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<Table name="Обработка" id="31">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Обработка</DataPath>
+							<RowPictureDataPath>Обработка.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ОбработкаКонтекстноеМеню" id="32"/>
+							<AutoCommandBar name="ОбработкаКоманднаяПанель" id="33"/>
+							<ExtendedTooltip name="ОбработкаРасширеннаяПодсказка" id="34"/>
+							<SearchStringAddition name="ОбработкаСтрокаПоиска" id="35">
+								<AdditionSource>
+									<Item>Обработка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаСтрокаПоискаКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ОбработкаСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбработкаСостояниеПросмотра" id="38">
+								<AdditionSource>
+									<Item>Обработка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаСостояниеПросмотраКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ОбработкаСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбработкаУправлениеПоиском" id="41">
+								<AdditionSource>
+									<Item>Обработка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаУправлениеПоискомКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="ОбработкаУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбработкаОбработчик" id="47">
+									<DataPath>Обработка.Обработчик</DataPath>
+									<ContextMenu name="ОбработкаОбработчикКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ОбработкаОбработчикРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+								<CheckBoxField name="ОбработкаОбработано" id="44">
+									<DataPath>Обработка.Обработано</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаОбработаноКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ОбработкаОбработаноРасширеннаяПодсказка" id="46"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОбработкаОшибка" id="50">
+									<DataPath>Обработка.Ошибка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаОшибкаКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ОбработкаОшибкаРасширеннаяПодсказка" id="52"/>
+								</CheckBoxField>
+								<LabelField name="ОбработкаТекстОшибки" id="56">
+									<DataPath>Обработка.ТекстОшибки</DataPath>
+									<ContextMenu name="ОбработкаТекстОшибкиКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ОбработкаТекстОшибкиРасширеннаяПодсказка" id="58"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбработкаКлиент" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Клиент)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Клиент)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбработкаКлиентРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<Table name="ОбработкаКлиент" id="65">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ОбработкаКлиент</DataPath>
+							<RowPictureDataPath>ОбработкаКлиент.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ОбработкаКлиентКонтекстноеМеню" id="66"/>
+							<AutoCommandBar name="ОбработкаКлиентКоманднаяПанель" id="67"/>
+							<ExtendedTooltip name="ОбработкаКлиентРасширеннаяПодсказка" id="68"/>
+							<SearchStringAddition name="ОбработкаКлиентСтрокаПоиска" id="69">
+								<AdditionSource>
+									<Item>ОбработкаКлиент</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаКлиентСтрокаПоискаКонтекстноеМеню" id="70"/>
+								<ExtendedTooltip name="ОбработкаКлиентСтрокаПоискаРасширеннаяПодсказка" id="71"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбработкаКлиентСостояниеПросмотра" id="72">
+								<AdditionSource>
+									<Item>ОбработкаКлиент</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаКлиентСостояниеПросмотраКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="ОбработкаКлиентСостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбработкаКлиентУправлениеПоиском" id="75">
+								<AdditionSource>
+									<Item>ОбработкаКлиент</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаКлиентУправлениеПоискомКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ОбработкаКлиентУправлениеПоискомРасширеннаяПодсказка" id="77"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбработкаКлиентОбработчик" id="81">
+									<DataPath>ОбработкаКлиент.Обработчик</DataPath>
+									<ContextMenu name="ОбработкаКлиентОбработчикКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ОбработкаКлиентОбработчикРасширеннаяПодсказка" id="83"/>
+								</LabelField>
+								<LabelField name="ОбработкаКлиентПользователь" id="87">
+									<DataPath>ОбработкаКлиент.Пользователь</DataPath>
+									<ContextMenu name="ОбработкаКлиентПользовательКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ОбработкаКлиентПользовательРасширеннаяПодсказка" id="89"/>
+								</LabelField>
+								<CheckBoxField name="ОбработкаКлиентОбработано" id="78">
+									<DataPath>ОбработкаКлиент.Обработано</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаКлиентОбработаноКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ОбработкаКлиентОбработаноРасширеннаяПодсказка" id="80"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОбработкаКлиентОшибка" id="84">
+									<DataPath>ОбработкаКлиент.Ошибка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаКлиентОшибкаКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ОбработкаКлиентОшибкаРасширеннаяПодсказка" id="86"/>
+								</CheckBoxField>
+								<LabelField name="ОбработкаКлиентТекстОшибки" id="93">
+									<DataPath>ОбработкаКлиент.ТекстОшибки</DataPath>
+									<ContextMenu name="ОбработкаКлиентТекстОшибкиКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ОбработкаКлиентТекстОшибкиРасширеннаяПодсказка" id="95"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбработкаОшибка" id="121">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обработка ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбработкаОшибкаРасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<InputField name="ТекстОшибки" id="123">
+							<DataPath>Запись.ТекстОшибки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="125"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ктв_сб_События</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Обработка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка (Сервер)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СобытияОбработка.ТочкаВозникновения,
+	СобытияОбработка.Обработчик,
+	СобытияОбработка.Событие,
+	СобытияОбработка.Обработано,
+	СобытияОбработка.Ошибка,
+	СобытияОбработка.ТекстОшибки
+ИЗ
+	РегистрСведений.ктв_сб_СобытияОбработка КАК СобытияОбработка
+ГДЕ
+	СобытияОбработка.Ид = &amp;Ид
+	И СобытияОбработка.ТочкаВозникновения = &amp;ТочкаВозникновения</QueryText>
+				<MainTable>InformationRegister.ктв_сб_СобытияОбработка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОбработкаКлиент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка (Клиент)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СобытияОбработка.ТочкаВозникновения,
+	СобытияОбработка.Обработчик,
+	СобытияОбработка.Пользователь,
+	СобытияОбработка.Событие,
+	СобытияОбработка.Обработано,
+	СобытияОбработка.Ошибка,
+	СобытияОбработка.ТекстОшибки
+ИЗ
+	РегистрСведений.ктв_сб_СобытияОбработкаНаКлиенте КАК СобытияОбработка
+ГДЕ
+	СобытияОбработка.Ид = &amp;Ид
+	И СобытияОбработка.ТочкаВозникновения = &amp;ТочкаВозникновения</QueryText>
+				<MainTable>InformationRegister.ктв_сб_СобытияОбработкаНаКлиенте</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПараметрыСобытия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры события</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Параметр" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

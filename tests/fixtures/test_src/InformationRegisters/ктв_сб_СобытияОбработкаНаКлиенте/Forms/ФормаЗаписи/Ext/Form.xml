@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТочкаВозникновения" id="1">
+			<DataPath>Запись.ТочкаВозникновения</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТочкаВозникновенияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТочкаВозникновенияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Ид" id="4">
+			<DataPath>Запись.Ид</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИдКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИдРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Событие" id="13">
+			<DataPath>Запись.Событие</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СобытиеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СобытиеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="ГруппаМоментСобытия" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа момент события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа момент события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМоментСобытияРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="ДатаСобытия" id="27">
+					<DataPath>ДатаСобытия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ДатаСобытияКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ДатаСобытияРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="МоментСобытия" id="30">
+					<DataPath>МоментСобытия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="МоментСобытияКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="МоментСобытияРасширеннаяПодсказка" id="32"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Обработчик" id="7">
+			<DataPath>Запись.Обработчик</DataPath>
+			<ContextMenu name="ОбработчикКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОбработчикРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Пользователь" id="10">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="Обработано" id="16">
+			<DataPath>Запись.Обработано</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбработаноКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОбработаноРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="Ошибка" id="19">
+			<DataPath>Запись.Ошибка</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОшибкаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ОшибкаРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<TextDocumentField name="ТекстОшибки" id="22">
+			<DataPath>Запись.ТекстОшибки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="24"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ктв_сб_СобытияОбработкаНаКлиенте</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДатаСобытия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МоментСобытия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Момент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>16</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

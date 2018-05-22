@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройкуИЗакрыть" id="47">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьНастройкуИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкуИЗакрытьРасширеннаяПодсказка" id="48"/>
+			</Button>
+			<Button name="ФормаСохранитьНастройку" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьНастройку</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкуРасширеннаяПодсказка" id="20"/>
+			</Button>
+			<ButtonGroup name="ФормаГруппаНастройки" id="93">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа настройки</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа настройки</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаНастройкиРасширеннаяПодсказка" id="94"/>
+				<ChildItems>
+					<Button name="ФормаСохранитьНастройкиВФайл" id="99">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.СохранитьНастройкиВФайл</CommandName>
+						<ExtendedTooltip name="ФормаСохранитьНастройкиВФайлРасширеннаяПодсказка" id="100"/>
+					</Button>
+					<Button name="ФормаЗагрузитьНастройкиИзФайла" id="101">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.ЗагрузитьНастройкиИзФайла</CommandName>
+						<ExtendedTooltip name="ФормаЗагрузитьНастройкиИзФайлаРасширеннаяПодсказка" id="102"/>
+					</Button>
+					<Popup name="ФормаГруппаШаблоныНастроек" id="97">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Загрузить из шаблона</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа шаблоны настроек</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ФормаГруппаШаблоныНастроекРасширеннаяПодсказка" id="98"/>
+					</Popup>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппаДанные" id="95">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа данные</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа данные</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаДанныеРасширеннаяПодсказка" id="96"/>
+				<ChildItems>
+					<Button name="ФормаЗарегистрироватьИзменения" id="41">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.ЗарегистрироватьИзменения</CommandName>
+						<ExtendedTooltip name="ФормаЗарегистрироватьИзмененияРасширеннаяПодсказка" id="42"/>
+					</Button>
+					<Button name="ФормаВыгрузитьДанные" id="39">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.ВыгрузитьДанные</CommandName>
+						<ExtendedTooltip name="ФормаВыгрузитьДанныеРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ФормаВыгрузитьСкриптыВФайл" id="45">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Command.ВыгрузитьСкриптыВФайлы</CommandName>
+						<ExtendedTooltip name="ФормаВыгрузитьСкриптыВФайлРасширеннаяПодсказка" id="46"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="ФормаЗакрыть" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Button name="РедактироватьЗапрос" id="91">
+			<Type>Hyperlink</Type>
+			<CommandName>Form.Command.РедактироватьЗапрос</CommandName>
+			<ExtendedTooltip name="РедактироватьЗапросРасширеннаяПодсказка" id="92"/>
+		</Button>
+		<InputField name="НастройкаСоединения" id="27">
+			<DataPath>НастройкаСоединения</DataPath>
+			<ContextMenu name="НастройкаСоединенияКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="НастройкаСоединенияРасширеннаяПодсказка" id="29"/>
+			<Events>
+				<Event name="OnChange">НастройкаСоединенияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИмяТаблицыСУБД" id="24">
+			<DataPath>ИмяТаблицыСУБД</DataPath>
+			<ChoiceListButton>true</ChoiceListButton>
+			<ContextMenu name="ИмяТаблицыСУБДКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ИмяТаблицыСУБДРасширеннаяПодсказка" id="26"/>
+			<Events>
+				<Event name="OnChange">ИмяТаблицыСУБДПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаНастройкаЗаполненияПолей" id="89">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка заполнения полей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройка заполнения полей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНастройкаЗаполненияПолейРасширеннаяПодсказка" id="90"/>
+			<ChildItems>
+				<Table name="ЗаполнениеПолей" id="52">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ЗаполнениеПолей</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ЗаполнениеПолейКонтекстноеМеню" id="53"/>
+					<AutoCommandBar name="ЗаполнениеПолейКоманднаяПанель" id="54"/>
+					<ExtendedTooltip name="ЗаполнениеПолейРасширеннаяПодсказка" id="55"/>
+					<SearchStringAddition name="ЗаполнениеПолейСтрокаПоиска" id="56">
+						<AdditionSource>
+							<Item>ЗаполнениеПолей</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗаполнениеПолейСтрокаПоискаКонтекстноеМеню" id="57"/>
+						<ExtendedTooltip name="ЗаполнениеПолейСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЗаполнениеПолейСостояниеПросмотра" id="59">
+						<AdditionSource>
+							<Item>ЗаполнениеПолей</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗаполнениеПолейСостояниеПросмотраКонтекстноеМеню" id="60"/>
+						<ExtendedTooltip name="ЗаполнениеПолейСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЗаполнениеПолейУправлениеПоиском" id="62">
+						<AdditionSource>
+							<Item>ЗаполнениеПолей</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗаполнениеПолейУправлениеПоискомКонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="ЗаполнениеПолейУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnStartEdit">ЗаполнениеПолейПриНачалеРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ЗаполнениеПолейКолонкаСУБД" id="65">
+							<DataPath>ЗаполнениеПолей.КолонкаСУБД</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ЗаполнениеПолейКолонкаСУБДКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ЗаполнениеПолейКолонкаСУБДРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="ЗаполнениеПолейКолонкаЗапроса" id="68">
+							<DataPath>ЗаполнениеПолей.КолонкаЗапроса</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ЗаполнениеПолейКолонкаЗапросаКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ЗаполнениеПолейКолонкаЗапросаРасширеннаяПодсказка" id="70"/>
+						</InputField>
+						<CheckBoxField name="ЗаполнениеПолейПолеСсылки" id="86">
+							<DataPath>ЗаполнениеПолей.ПолеСсылки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗаполнениеПолейПолеСсылкиКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ЗаполнениеПолейПолеСсылкиРасширеннаяПодсказка" id="88"/>
+						</CheckBoxField>
+						<CheckBoxField name="ЗаполнениеПолейПолеПоиска" id="83">
+							<DataPath>ЗаполнениеПолей.ПолеПоиска</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗаполнениеПолейПолеПоискаКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ЗаполнениеПолейПолеПоискаРасширеннаяПодсказка" id="85"/>
+						</CheckBoxField>
+						<InputField name="ЗаполнениеПолейВыражение" id="71">
+							<DataPath>ЗаполнениеПолей.Выражение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЗаполнениеПолейВыражениеКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ЗаполнениеПолейВыражениеРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ЗаполнениеПолейТаблицаИсточник" id="74">
+							<DataPath>ЗаполнениеПолей.ТаблицаИсточник</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ЗаполнениеПолейТаблицаИсточникКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ЗаполнениеПолейТаблицаИсточникРасширеннаяПодсказка" id="76"/>
+							<Events>
+								<Event name="OnChange">ЗаполнениеПолейТаблицаИсточникПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЗаполнениеПолейПоляКлюча" id="77">
+							<DataPath>ЗаполнениеПолей.ПоляКлючаПредставление</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ЗаполнениеПолейПоляКлючаКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ЗаполнениеПолейПоляКлючаРасширеннаяПодсказка" id="79"/>
+							<Events>
+								<Event name="StartChoice">ЗаполнениеПолейПоляКлючаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЗаполнениеПолейПолеЗначения" id="80">
+							<DataPath>ЗаполнениеПолей.ПолеЗначения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ЗаполнениеПолейПолеЗначенияКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ЗаполнениеПолейПолеЗначенияРасширеннаяПодсказка" id="82"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ПоказатьТекстЗапросаСКЛ" id="103">
+			<Type>Hyperlink</Type>
+			<CommandName>Form.Command.ПоказатьТекстЗапросаСКЛ</CommandName>
+			<ExtendedTooltip name="ПоказатьТекстЗапросаСКЛРасширеннаяПодсказка" id="104"/>
+		</Button>
+		<InputField name="УзелКонтроляИзменений" id="30">
+			<DataPath>УзелКонтроляИзменений</DataPath>
+			<ContextMenu name="УзелКонтроляИзмененийКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="УзелКонтроляИзмененийРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="КоличествоСтрокВВыборкеДанных" id="33">
+			<DataPath>КоличествоСтрокВВыборкеДанных</DataPath>
+			<ContextMenu name="КоличествоСтрокВВыборкеДанныхКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="КоличествоСтрокВВыборкеДанныхРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="КоличествоСтрокВТранзакцииСУБД" id="36">
+			<DataPath>КоличествоСтрокВТранзакцииСУБД</DataPath>
+			<ContextMenu name="КоличествоСтрокВТранзакцииСУБДКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="КоличествоСтрокВТранзакцииСУБДРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="ОбработкаПустогоРезультатаЗапроса" id="105">
+			<DataPath>ОбработкаПустогоРезультатаЗапроса</DataPath>
+			<Width>20</Width>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChooseType>false</ChooseType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Считать необработанным</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">0</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сообщать об ошибке</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Считать обработанным</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">2</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ОбработкаПустогоРезультатаЗапросаКонтекстноеМеню" id="106"/>
+			<ExtendedTooltip name="ОбработкаПустогоРезультатаЗапросаРасширеннаяПодсказка" id="107"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ктв_сб_СобытияОбработчик_ВыгрузитьВСКЛ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОбработкаНастройкиАдресВХранилище" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка настройки адрес в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкаСоединения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка соединения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ктв_НастройкиПодключенияКСУБД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяТаблицыСУБД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя таблицы SQL</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УзелКонтроляИзменений" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узел контроля изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаполнениеПолей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение полей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КолонкаСУБД" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаЗапроса" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка запроса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выражение" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выражение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТаблицаИсточник" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоляКлюча" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля ключа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолеЗначения" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолеПоиска" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле поиска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПолеСсылки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле ссылки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоляКлючаПредставление" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля ключа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ЗаполнениеПолей.ПоляКлюча"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПараметрыЗапроса" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Параметр" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ТипПараметра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Список" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Выражение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выражение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КоличествоСтрокВВыборкеДанных" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество строк в выборке данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоСтрокВТранзакцииСУБД" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество строк в транзакции СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаПустогоРезультатаЗапроса" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка пустого результата запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьНастройку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗаполнитьПараметры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ЗарегистрироватьИзменения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExchangePlan</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗарегистрироватьИзменения</Action>
+		</Command>
+		<Command name="ВыгрузитьДанные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьДанные</Action>
+		</Command>
+		<Command name="ВыгрузитьСкриптыВФайлы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить скрипты в файлы...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить скрипты в файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Task</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьСкриптыВФайлы</Action>
+		</Command>
+		<Command name="СохранитьНастройкуИЗакрыть" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EndEdit</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьНастройкуИЗакрыть</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="РедактироватьЗапрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РедактироватьЗапрос</Action>
+		</Command>
+		<Command name="СохранитьНастройкиВФайл" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки в файл...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьНастройкиВФайл</Action>
+		</Command>
+		<Command name="ЗагрузитьНастройкиИзФайла" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки из файла...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьНастройкиИзФайла</Action>
+		</Command>
+		<Command name="ПоказатьТекстЗапросаСКЛ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать текст запроса SQL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать текст запроса СКЛ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьТекстЗапросаСКЛ</Action>
+		</Command>
+	</Commands>
+</Form>

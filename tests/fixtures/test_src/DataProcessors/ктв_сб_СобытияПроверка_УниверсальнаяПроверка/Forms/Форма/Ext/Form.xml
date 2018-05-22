@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройку" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьНастройку</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкуРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="3">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбработчикиПроверки" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработчики проверки возникновения события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработчики проверки возникновения события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаОбработчикиПроверкиРасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<Table name="ТочкиПроверкиСобытий" id="119">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>ТочкиПроверкиСобытий</DataPath>
+					<RowPictureDataPath>ТочкиПроверкиСобытий.Picture</RowPictureDataPath>
+					<ContextMenu name="ТочкиПроверкиСобытийКонтекстноеМеню" id="120"/>
+					<AutoCommandBar name="ТочкиПроверкиСобытийКоманднаяПанель" id="121">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТочкиПроверкиСобытийРасширеннаяПодсказка" id="122"/>
+					<SearchStringAddition name="ТочкиПроверкиСобытийСтрокаПоиска" id="123">
+						<AdditionSource>
+							<Item>ТочкиПроверкиСобытий</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТочкиПроверкиСобытийСтрокаПоискаКонтекстноеМеню" id="124"/>
+						<ExtendedTooltip name="ТочкиПроверкиСобытийСтрокаПоискаРасширеннаяПодсказка" id="125"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТочкиПроверкиСобытийСостояниеПросмотра" id="126">
+						<AdditionSource>
+							<Item>ТочкиПроверкиСобытий</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТочкиПроверкиСобытийСостояниеПросмотраКонтекстноеМеню" id="127"/>
+						<ExtendedTooltip name="ТочкиПроверкиСобытийСостояниеПросмотраРасширеннаяПодсказка" id="128"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТочкиПроверкиСобытийУправлениеПоиском" id="129">
+						<AdditionSource>
+							<Item>ТочкиПроверкиСобытий</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТочкиПроверкиСобытийУправлениеПоискомКонтекстноеМеню" id="130"/>
+						<ExtendedTooltip name="ТочкиПроверкиСобытийУправлениеПоискомРасширеннаяПодсказка" id="131"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">ТочкиПроверкиСобытийПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="ТочкиПроверкиСобытийПометка" id="167">
+							<DataPath>ТочкиПроверкиСобытий.Check</DataPath>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТочкиПроверкиСобытийПометкаКонтекстноеМеню" id="168"/>
+							<ExtendedTooltip name="ТочкиПроверкиСобытийПометкаРасширеннаяПодсказка" id="169"/>
+						</CheckBoxField>
+						<InputField name="ТочкиПроверкиСобытийПредставление" id="132">
+							<DataPath>ТочкиПроверкиСобытий.Presentation</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТочкиПроверкиСобытийПредставлениеКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="ТочкиПроверкиСобытийПредставлениеРасширеннаяПодсказка" id="134"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаТочкаПроверкиСобытия_Код" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка проверки события код</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка проверки события код</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТочкаПроверкиСобытия_КодРасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<UsualGroup name="ТочкаПроверкиСобытия_ГруппаФункцияЗаголовок" id="137">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок функции проверки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок функции проверки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ТочкаПроверкиСобытия_ГруппаФункцияЗаголовокРасширеннаяПодсказка" id="138"/>
+							<ChildItems>
+								<LabelDecoration name="ТочкаПроверкиСобытия_НадписьФункция" id="139">
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Функция</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТочкаПроверкиСобытия_НадписьФункцияКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_НадписьФункцияРасширеннаяПодсказка" id="141"/>
+								</LabelDecoration>
+								<LabelDecoration name="ТочкаПроверкиСобытия_ИмяФункции" id="142">
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#0000FF</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ПроверитьНаступлениеСобытия(Источник, Событие, ПараметрыПодписки, ПараметрыСобытия)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТочкаПроверкиСобытия_ИмяФункцииКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_ИмяФункцииРасширеннаяПодсказка" id="144"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ТочкаПроверкиСобытия_ГруппаКод" id="162">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Точка проверки события группа код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработка на сервере группа код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ТочкаПроверкиСобытия_ГруппаКодРасширеннаяПодсказка" id="163"/>
+							<ChildItems>
+								<LabelDecoration name="ТочкаПроверкиСобытия_ОтступКода" id="164">
+									<Width>2</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<ContextMenu name="ТочкаПроверкиСобытия_ОтступКодаКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_ОтступКодаРасширеннаяПодсказка" id="166"/>
+								</LabelDecoration>
+								<TextDocumentField name="ТочкаПроверкиСобытия_Код" id="145">
+									<DataPath>ТочкаПроверкиСобытия_Код</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ТочкаПроверкиСобытия_КодКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_КодРасширеннаяПодсказка" id="147"/>
+									<Events>
+										<Event name="OnChange">ТочкаПроверкиСобытия_КодПриИзменении</Event>
+									</Events>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ТочкаПроверкиСобытия_ГруппаРезультат" id="148">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возврат результата проверки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возврат результата проверки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ТочкаПроверкиСобытия_ГруппаРезультатРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<LabelDecoration name="ТочкаПроверкиСобытия_НадписьВозврат" id="150">
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Возврат</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<ContextMenu name="ТочкаПроверкиСобытия_НадписьВозвратКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_НадписьВозвратРасширеннаяПодсказка" id="152"/>
+								</LabelDecoration>
+								<LabelDecoration name="ТочкаПроверкиСобытия_НадписьРезультат" id="153">
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>#0000FF</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Результат</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТочкаПроверкиСобытия_НадписьРезультатКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_НадписьРезультатРасширеннаяПодсказка" id="155"/>
+								</LabelDecoration>
+								<LabelDecoration name="ТочкаПроверкиСобытия_НадписьКонец" id="156">
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТочкаПроверкиСобытия_НадписьКонецКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ТочкаПроверкиСобытия_НадписьКонецРасширеннаяПодсказка" id="158"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ТочкаПроверкиСобытия_НадписьКонецФункции" id="159">
+							<TextColor>style:SpecialTextColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>КонецФункции</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТочкаПроверкиСобытия_НадписьКонецФункцииКонтекстноеМеню" id="160"/>
+							<ExtendedTooltip name="ТочкаПроверкиСобытия_НадписьКонецФункцииРасширеннаяПодсказка" id="161"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ктв_сб_СобытияПроверка_УниверсальнаяПроверка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОбработкаНастройкиАдресВХранилище" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка настройки адрес в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТочкиПроверкиСобытий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Точки проверки событий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ТочкаПроверкиСобытия_Код" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Точка проверки события код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТочкаПроверкиСобытия_Текущая" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Точка проверки события текущая</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьНастройку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

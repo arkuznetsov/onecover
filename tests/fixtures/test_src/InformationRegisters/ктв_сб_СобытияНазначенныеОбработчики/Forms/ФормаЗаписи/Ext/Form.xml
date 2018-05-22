@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Событие" id="1">
+			<DataPath>Запись.Событие</DataPath>
+			<ContextMenu name="СобытиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СобытиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТипИсточникаИлиТочкаВозникновения" id="4">
+			<DataPath>Запись.ТипИсточникаИлиТочкаВозникновения</DataPath>
+			<ContextMenu name="ТипИсточникаИлиТочкаВозникновенияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТипИсточникаИлиТочкаВозникновенияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Обработчик" id="7">
+			<DataPath>Запись.Обработчик</DataPath>
+			<ContextMenu name="ОбработчикКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОбработчикРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ОбрабатыватьНаСервере" id="19">
+			<DataPath>Запись.ОбрабатыватьНаСервере</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбрабатыватьНаСервереКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ОбрабатыватьНаСервереРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОбрабатыватьНаКлиенте" id="16">
+			<DataPath>Запись.ОбрабатыватьНаКлиенте</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбрабатыватьНаКлиентеКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОбрабатыватьНаКлиентеРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОтложеннаяОбработка" id="10">
+			<DataPath>Запись.ОтложеннаяОбработка</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтложеннаяОбработкаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОтложеннаяОбработкаРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОжидатьЗавершения" id="13">
+			<DataPath>Запись.ОжидатьЗавершения</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОжидатьЗавершенияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОжидатьЗавершенияРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="Приоритет" id="22">
+			<DataPath>Запись.Приоритет</DataPath>
+			<ContextMenu name="ПриоритетКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ктв_сб_СобытияНазначенныеОбработчики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,7 @@
+nginxproxy:
+  build: .
+  ports:
+   - 11550:11550
+  volumes:
+   - ./log/:/var/log/nginx   
+   - ./conf/nginx.conf:/nginx/conf/nginx.conf

@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Редактор запроса</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройкиИЗакрыть" id="67">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьНастройкиИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкиИЗакрытьРасширеннаяПодсказка" id="68"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаЗапросИВыражения" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос и выражения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос и выражения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЗапросИВыраженияРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Page name="ГруппаЗапрос" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запрос</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗапросРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<CommandBar name="ГруппаЗапрос_Команды" id="69">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа запрос команды</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа запрос команды</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЗапрос_КомандыРасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<Button name="ФормаЗапрос_ОткрытьКонструктор" id="29">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Запрос_ОткрытьКонструктор</CommandName>
+									<ExtendedTooltip name="ФормаЗапрос_ОткрытьКонструкторРасширеннаяПодсказка" id="30"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<TextDocumentField name="Запрос_Текст" id="1">
+							<DataPath>Запрос_Текст</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="Запрос_ТекстКонтекстноеМеню" id="2">
+								<ChildItems>
+									<Button name="Запрос_ТекстКонтекстноеМенюЗапрос_ОткрытьКонструктор" id="31">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Запрос_ОткрытьКонструктор</CommandName>
+										<ExtendedTooltip name="Запрос_ТекстКонтекстноеМенюЗапрос_ОткрытьКонструкторРасширеннаяПодсказка" id="32"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<ExtendedTooltip name="Запрос_ТекстРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">Запрос_ТекстПриИзменении</Event>
+							</Events>
+						</TextDocumentField>
+						<Table name="Запрос_Параметры" id="4">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Запрос_Параметры</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="Запрос_ПараметрыКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="Запрос_ПараметрыКоманднаяПанель" id="6">
+								<ChildItems>
+									<Button name="Запрос_ПараметрыЗапрос_ОбновитьПараметры" id="33">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Запрос_ОбновитьПараметры</CommandName>
+										<ExtendedTooltip name="Запрос_ПараметрыЗапрос_ОбновитьПараметрыРасширеннаяПодсказка" id="34"/>
+									</Button>
+									<Button name="Запрос_ПараметрыЗапрос_УдалитьНеиспользуемыеПараметры" id="71">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Запрос_УдалитьНеиспользуемыеПараметры</CommandName>
+										<ExtendedTooltip name="Запрос_ПараметрыЗапрос_УдалитьНеиспользуемыеПараметрыРасширеннаяПодсказка" id="72"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="Запрос_ПараметрыРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="Запрос_ПараметрыСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>Запрос_Параметры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Запрос_ПараметрыСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="Запрос_ПараметрыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Запрос_ПараметрыСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>Запрос_Параметры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Запрос_ПараметрыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="Запрос_ПараметрыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Запрос_ПараметрыУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>Запрос_Параметры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Запрос_ПараметрыУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="Запрос_ПараметрыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnStartEdit">Запрос_ПараметрыПриНачалеРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="Запрос_ПараметрыПараметр_Имя" id="17">
+									<DataPath>Запрос_Параметры.Параметр_Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Запрос_ПараметрыПараметр_ИмяКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="Запрос_ПараметрыПараметр_ИмяРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="Запрос_ПараметрыПараметр_Тип" id="23">
+									<DataPath>Запрос_Параметры.Параметр_Тип</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Запрос_ПараметрыПараметр_ТипКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="Запрос_ПараметрыПараметр_ТипРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="Запрос_ПараметрыПараметр_СпособЗаполнения" id="26">
+									<DataPath>Запрос_Параметры.Параметр_СпособЗаполнения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Значение</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Значение</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Список</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Список</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Выражение</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Выражение</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="Запрос_ПараметрыПараметр_СпособЗаполненияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="Запрос_ПараметрыПараметр_СпособЗаполненияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="Запрос_ПараметрыПараметр_Значение" id="20">
+									<DataPath>Запрос_Параметры.Параметр_Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Запрос_ПараметрыПараметр_ЗначениеКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="Запрос_ПараметрыПараметр_ЗначениеРасширеннаяПодсказка" id="22"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВыражения" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Произвольные выражения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выражения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВыраженияРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Table name="ПроизвольныеВыражения" id="41">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПроизвольныеВыражения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПроизвольныеВыраженияКонтекстноеМеню" id="42"/>
+							<AutoCommandBar name="ПроизвольныеВыраженияКоманднаяПанель" id="43"/>
+							<ExtendedTooltip name="ПроизвольныеВыраженияРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="ПроизвольныеВыраженияСтрокаПоиска" id="45">
+								<AdditionSource>
+									<Item>ПроизвольныеВыражения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроизвольныеВыраженияСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ПроизвольныеВыраженияСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПроизвольныеВыраженияСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>ПроизвольныеВыражения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроизвольныеВыраженияСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="ПроизвольныеВыраженияСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПроизвольныеВыраженияУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>ПроизвольныеВыражения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроизвольныеВыраженияУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ПроизвольныеВыраженияУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ПроизвольныеВыраженияПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ПроизвольныеВыраженияИмя" id="54">
+									<DataPath>ПроизвольныеВыражения.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроизвольныеВыраженияИмяКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ПроизвольныеВыраженияИмяРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="ПроизвольныеВыраженияКод" id="57">
+									<DataPath>ПроизвольныеВыражения.Код</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроизвольныеВыраженияКодКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПроизвольныеВыраженияКодРасширеннаяПодсказка" id="59"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаКод" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКодРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<Button name="ПроизвольныеВыражения_Сохранить" id="65">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроизвольныеВыражения_Сохранить</CommandName>
+									<ExtendedTooltip name="ПроизвольныеВыражения_СохранитьРасширеннаяПодсказка" id="66"/>
+								</Button>
+								<TextDocumentField name="ПроизвольныеВыражения_Код" id="60">
+									<DataPath>ПроизвольныеВыражения_Код</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ПроизвольныеВыражения_КодКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ПроизвольныеВыражения_КодРасширеннаяПодсказка" id="62"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ктв_сб_ПроцессорЗапросов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Запрос_Параметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Параметр_Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Параметр_Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Параметр_Тип" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Параметр_СпособЗаполнения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ заполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Запрос_Текст" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроизвольныеВыражения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Произвольные выражения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Код" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПроизвольныеВыражения_Код" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код выражения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроизвольныеВыражения_ТекущаяСтрока" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Произвольные выражения текущая строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Запрос_ОткрытьКонструктор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в конструкторе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в конструкторе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizard</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Запрос_ОткрытьКонструктор</Action>
+		</Command>
+		<Command name="Запрос_ОбновитьПараметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить параметры из запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить параметры из запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizardCreateTempTableDescription</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Запрос_ОбновитьПараметры</Action>
+		</Command>
+		<Command name="ПроизвольныеВыражения_Сохранить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить код произвольного выражения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить код произвольного выражения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EndEdit</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроизвольныеВыражения_Сохранить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СохранитьНастройкиИЗакрыть" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EndEdit</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьНастройкиИЗакрыть</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Запрос_УдалитьНеиспользуемыеПараметры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить неиспользуемые параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить неиспользуемые параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizardCreateTempTableDropQuery</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Запрос_УдалитьНеиспользуемыеПараметры</Action>
+		</Command>
+	</Commands>
+</Form>

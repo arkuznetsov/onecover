@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Configuration uuid="13340d84-acc7-4412-8dfb-0a6b9dded7e9">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
+				<xr:ObjectId>2b3a0591-bc37-484d-8412-87678367ad17</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
+				<xr:ObjectId>d139b4b4-c646-48ca-8015-686b70cfdda2</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
+				<xr:ObjectId>271208d4-debe-462a-a28b-b4037b8baa36</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
+				<xr:ObjectId>48c66b2e-61b0-49d5-b2a2-d6ef158385a2</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
+				<xr:ObjectId>31a998d3-6584-485d-b583-40970ef77d31</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>cd70b639-f3fb-406a-b789-8a87347f4a86</xr:ObjectId>
+			</xr:ContainedObject>
+		</InternalInfo>
+		<Properties>
+			<Name>EventHUB</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Event HUB</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<NamePrefix/>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
+			<DefaultRunMode>ManagedApplication</DefaultRunMode>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PersonalComputer</v8:Value>
+			</UsePurposes>
+			<ScriptVariant>Russian</ScriptVariant>
+			<DefaultRoles>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Администрирование</xr:Item>
+			</DefaultRoles>
+			<Vendor/>
+			<Version>1.0.3.0</Version>
+			<UpdateCatalogAddress/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
+			<UseOrdinaryFormInManagedApplication>false</UseOrdinaryFormInManagedApplication>
+			<AdditionalFullTextSearchDictionaries/>
+			<CommonSettingsStorage/>
+			<ReportsUserSettingsStorage/>
+			<ReportsVariantsStorage/>
+			<FormDataSettingsStorage/>
+			<DynamicListsUserSettingsStorage/>
+			<Content/>
+			<DefaultReportForm/>
+			<DefaultReportVariantForm/>
+			<DefaultReportSettingsForm/>
+			<DefaultDynamicListSettingsForm/>
+			<DefaultSearchForm/>
+			<RequiredMobileApplicationPermissions>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Multimedia</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Location</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Contacts</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Calendars</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Telephony</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">PushNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">LocalNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">InAppPurchases</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Ads</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+			</RequiredMobileApplicationPermissions>
+			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
+			<DefaultInterface/>
+			<DefaultStyle/>
+			<DefaultLanguage>Language.Русский</DefaultLanguage>
+			<BriefInformation/>
+			<DetailedInformation/>
+			<Copyright>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артем Кузнецов (KTB)</v8:content>
+				</v8:item>
+			</Copyright>
+			<VendorInformationAddress/>
+			<ConfigurationInformationAddress/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
+			<ModalityUseMode>DontUse</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
+			<CompatibilityMode>Version8_3_10</CompatibilityMode>
+			<DefaultConstantsForm/>
+		</Properties>
+		<ChildObjects>
+			<Language>Русский</Language>
+			<Subsystem>Администрирование</Subsystem>
+			<Role>Администрирование</Role>
+			<Role>ПолныеПрава</Role>
+			<Role>ктв_сб_СобытияНастройка</Role>
+			<CommonTemplate>ктв_сб_СобытияВерсияПодсистемы</CommonTemplate>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
+			<CommonModule>ктв_ОбщегоНазначенияПреобразованиеЗначений</CommonModule>
+			<CommonModule>ктв_ОбщегоНазначенияРаботаССервисами</CommonModule>
+			<CommonModule>ктв_ОбщегоНазначенияРаботаССервисамиВызовСервера</CommonModule>
+			<CommonModule>ктв_сб_ОбработкиОбслуживанияВызовСервера</CommonModule>
+			<CommonModule>ктв_сб_ОбработкиОбслуживания</CommonModule>
+			<CommonModule>ктв_сб_ОбработкиОбслуживанияКлиент</CommonModule>
+			<CommonModule>ктв_сб_События</CommonModule>
+			<CommonModule>ктв_сб_СобытияВнешниеЗапросы</CommonModule>
+			<CommonModule>ктв_сб_СобытияВызовСервера</CommonModule>
+			<CommonModule>ктв_сб_СобытияГлобальный</CommonModule>
+			<CommonModule>ктв_сб_СобытияКлиент</CommonModule>
+			<CommonModule>ктв_сб_СобытияОбновлениеИнформационнойБазы</CommonModule>
+			<CommonModule>ктв_сб_СобытияОбработкаВнешнихЗапросов</CommonModule>
+			<WebService>ktb_EventHub</WebService>
+			<HTTPService>ktb_EventHub</HTTPService>
+			<EventSubscription>ктв_сб_СобытияВсеОбъектыПриКопировании</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеОбъектыКромеДокументовПередЗаписью</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияДокументыПередЗаписью</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеОбъектыПриЗаписи</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеОбъектыПередУдалением</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеОбъектыОбработкаЗаполнения</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеОбъектыОбработкаПроверкиЗаполнения</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияДокументыОбработкаПроведения</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияДокументыОбработкаУдаленияПроведения</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияБизнессПроцессыЗадачиОбработкаИнтерактивнойАктивации</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияЗадачиОбработкаПроверкиВыполнения</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияЗадачиПередВыполнением</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияЗадачиПередИнтерактивнымВыполнением</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияЗадачиПриВыполнении</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеНаборыЗаписейОбработкаПроверкиЗаполнения</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеНаборыЗаписейКромеРегистраРасчетовПередЗаписью</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияВсеНаборыЗаписейКромеРегистраРасчетовПриЗаписи</EventSubscription>
+			<EventSubscription>ктв_сб_СобытияРегистрыСведенийОбработкаЗаполнения</EventSubscription>
+			<ScheduledJob>ктв_сб_СобытияОтложеннаяОбработка</ScheduledJob>
+			<ScheduledJob>ктв_сб_СобытияУдалениеОбработанных</ScheduledJob>
+			<Catalog>ИдентификаторыОбъектовМетаданных</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ктв_НастройкиПодключенияКСУБД</Catalog>
+			<Catalog>ктв_сб_АдресаСервисов</Catalog>
+			<Catalog>ктв_сб_События</Catalog>
+			<Catalog>ктв_сб_СобытияОбработчики</Catalog>
+			<Catalog>ктв_сб_СобытияТочкиВозникновения</Catalog>
+			<Enum>ктв_сб_ТипСервиса</Enum>
+			<DataProcessor>ктв_сб_ЗарегистрироватьСобытие</DataProcessor>
+			<DataProcessor>ктв_сб_ПроцессорЗапросов</DataProcessor>
+			<DataProcessor>ктв_сб_СобытияОбработчик_ВыгрузитьВСКЛ</DataProcessor>
+			<DataProcessor>ктв_сб_СобытияОбработчик_ПередатьСобытиеВнешнимИБ</DataProcessor>
+			<DataProcessor>ктв_сб_СобытияОбработчик_ИзменениеПользователейАД</DataProcessor>
+			<DataProcessor>ктв_сб_СобытияОбработчик_УниверсальныйОбработчик</DataProcessor>
+			<DataProcessor>ктв_сб_СобытияПроверка_ИзменениеОбъекта</DataProcessor>
+			<DataProcessor>ктв_сб_СобытияПроверка_УниверсальнаяПроверка</DataProcessor>
+			<DataProcessor>Обработка1</DataProcessor>
+			<InformationRegister>ктв_сб_События</InformationRegister>
+			<InformationRegister>ктв_сб_СобытияНазначенныеОбработчики</InformationRegister>
+			<InformationRegister>ктв_сб_СобытияОбработка</InformationRegister>
+			<InformationRegister>ктв_сб_СобытияОбработкаНаКлиенте</InformationRegister>
+		</ChildObjects>
+	</Configuration>
+</MetaDataObject>

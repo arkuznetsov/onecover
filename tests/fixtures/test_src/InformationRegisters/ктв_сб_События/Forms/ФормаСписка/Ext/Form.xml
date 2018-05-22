@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+			</CommandSet>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТочкаВозникновения" id="87">
+					<DataPath>Список.ТочкаВозникновения</DataPath>
+					<ContextMenu name="ТочкаВозникновенияКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ТочкаВозникновенияРасширеннаяПодсказка" id="89"/>
+				</LabelField>
+				<LabelField name="Событие" id="22">
+					<DataPath>Список.Событие</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СобытиеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СобытиеРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Источник" id="25">
+					<DataPath>Список.Источник</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ИсточникКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="УдалитьИсточник" id="90">
+					<DataPath>Список.УдалитьИсточник</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="УдалитьИсточникКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="УдалитьИсточникРасширеннаяПодсказка" id="92"/>
+				</LabelField>
+				<LabelField name="Дата" id="19">
+					<DataPath>Список.Дата</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<CheckBoxField name="Ошибка" id="98">
+					<DataPath>Список.Ошибка</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОшибкаКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ОшибкаРасширеннаяПодсказка" id="100"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОшибкаОбработки" id="101">
+					<DataPath>Список.ОшибкаОбработки</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОшибкаОбработкиКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ОшибкаОбработкиРасширеннаяПодсказка" id="103"/>
+				</CheckBoxField>
+				<CheckBoxField name="Обработано" id="104">
+					<DataPath>Список.Обработано</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбработаноКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ОбработаноРасширеннаяПодсказка" id="106"/>
+				</CheckBoxField>
+				<LabelField name="Ид" id="16">
+					<DataPath>Список.Ид</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ИдКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ИдРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<Pages name="ГруппаОбработка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаОбработкаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="ГруппаОбработкаОшибка" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обработка ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбработкаОшибкаРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<InputField name="ТекстОшибки" id="95">
+							<DataPath>ТекстОшибки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="97"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбработкаСервер" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Сервер)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Сервер)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбработкаСерверРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Table name="Обработка" id="32">
+							<ChangeRowSet>false</ChangeRowSet>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Обработка</DataPath>
+							<RowPictureDataPath>Обработка.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ОбработкаКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="ОбработкаКоманднаяПанель" id="34"/>
+							<ExtendedTooltip name="ОбработкаРасширеннаяПодсказка" id="35"/>
+							<SearchStringAddition name="ОбработкаСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>Обработка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ОбработкаСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбработкаСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>Обработка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ОбработкаСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбработкаУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>Обработка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ОбработкаУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбработкаОбработчик" id="45">
+									<DataPath>Обработка.Обработчик</DataPath>
+									<ContextMenu name="ОбработкаОбработчикКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ОбработкаОбработчикРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<CheckBoxField name="ОбработкаОбработано" id="48">
+									<DataPath>Обработка.Обработано</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаОбработаноКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ОбработкаОбработаноРасширеннаяПодсказка" id="50"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОбработкаОшибка" id="51">
+									<DataPath>Обработка.Ошибка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаОшибкаКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ОбработкаОшибкаРасширеннаяПодсказка" id="53"/>
+								</CheckBoxField>
+								<LabelField name="ОбработкаТекстОшибки" id="54">
+									<DataPath>Обработка.ТекстОшибки</DataPath>
+									<ContextMenu name="ОбработкаТекстОшибкиКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ОбработкаТекстОшибкиРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбработкаКлиент" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Клиент)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка (Клиент)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбработкаКлиентРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<Table name="ОбработкаКлиент" id="59">
+							<ChangeRowSet>false</ChangeRowSet>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ОбработкаКлиент</DataPath>
+							<RowPictureDataPath>ОбработкаКлиент.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ОбработкаКлиентКонтекстноеМеню" id="60"/>
+							<AutoCommandBar name="ОбработкаКлиентКоманднаяПанель" id="61"/>
+							<ExtendedTooltip name="ОбработкаКлиентРасширеннаяПодсказка" id="62"/>
+							<SearchStringAddition name="ОбработкаКлиентСтрокаПоиска" id="63">
+								<AdditionSource>
+									<Item>ОбработкаКлиент</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаКлиентСтрокаПоискаКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ОбработкаКлиентСтрокаПоискаРасширеннаяПодсказка" id="65"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбработкаКлиентСостояниеПросмотра" id="66">
+								<AdditionSource>
+									<Item>ОбработкаКлиент</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаКлиентСостояниеПросмотраКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="ОбработкаКлиентСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбработкаКлиентУправлениеПоиском" id="69">
+								<AdditionSource>
+									<Item>ОбработкаКлиент</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбработкаКлиентУправлениеПоискомКонтекстноеМеню" id="70"/>
+								<ExtendedTooltip name="ОбработкаКлиентУправлениеПоискомРасширеннаяПодсказка" id="71"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбработкаКлиентОбработчик" id="72">
+									<DataPath>ОбработкаКлиент.Обработчик</DataPath>
+									<ContextMenu name="ОбработкаКлиентОбработчикКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ОбработкаКлиентОбработчикРасширеннаяПодсказка" id="74"/>
+								</LabelField>
+								<LabelField name="ОбработкаКлиентПользователь" id="75">
+									<DataPath>ОбработкаКлиент.Пользователь</DataPath>
+									<ContextMenu name="ОбработкаКлиентПользовательКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ОбработкаКлиентПользовательРасширеннаяПодсказка" id="77"/>
+								</LabelField>
+								<CheckBoxField name="ОбработкаКлиентОбработано" id="78">
+									<DataPath>ОбработкаКлиент.Обработано</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаКлиентОбработаноКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ОбработкаКлиентОбработаноРасширеннаяПодсказка" id="80"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОбработкаКлиентОшибка" id="81">
+									<DataPath>ОбработкаКлиент.Ошибка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбработкаКлиентОшибкаКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ОбработкаКлиентОшибкаРасширеннаяПодсказка" id="83"/>
+								</CheckBoxField>
+								<LabelField name="ОбработкаКлиентТекстОшибки" id="84">
+									<DataPath>ОбработкаКлиент.ТекстОшибки</DataPath>
+									<ContextMenu name="ОбработкаКлиентТекстОшибкиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ОбработкаКлиентТекстОшибкиРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ТочкаВозникновения</Field>
+				<Field>Список.ТекстОшибки</Field>
+				<Field>Список.ОшибкаОбработки</Field>
+				<Field>Список.Ошибка</Field>
+				<Field>Список.Обработано</Field>
+				<Field>Список.Ид</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЖурналСобытий.ТочкаВозникновения,
+	ЖурналСобытий.Ид,
+	ЖурналСобытий.Источник,
+	ДОБАВИТЬКДАТЕ(ЖурналСобытий.Дата, МИНУТА, &amp;СмещениеВремени) КАК Дата,
+	ЖурналСобытий.Момент,
+	ЖурналСобытий.Событие,
+	ЖурналСобытий.ТипИсточника,
+	ЖурналСобытий.УдалитьИсточник,
+	ЖурналСобытий.Пользователь,
+	ЖурналСобытий.Параметры,
+	ЖурналСобытий.Ошибка,
+	ЖурналСобытий.ТекстОшибки,
+	СобытияОбработка.Обработано,
+	СобытияОбработка.Ошибка КАК ОшибкаОбработки,
+	ЖурналСобытий.Событие.ВремяЖизни КАК ВремяЖизни
+ИЗ
+	РегистрСведений.ктв_сб_События КАК ЖурналСобытий
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			СобытияОбработка.ТочкаВозникновения КАК ТочкаВозникновения,
+			СобытияОбработка.Ид КАК Ид,
+			МИНИМУМ(СобытияОбработка.Обработано) КАК Обработано,
+			МАКСИМУМ(СобытияОбработка.Ошибка) КАК Ошибка
+		ИЗ
+			(ВЫБРАТЬ
+				СобытияОбработка.ТочкаВозникновения КАК ТочкаВозникновения,
+				СобытияОбработка.Ид КАК Ид,
+				СобытияОбработка.Обработано КАК Обработано,
+				СобытияОбработка.Ошибка КАК Ошибка
+			ИЗ
+				РегистрСведений.ктв_сб_СобытияОбработка КАК СобытияОбработка
+			
+			ОБЪЕДИНИТЬ
+			
+			ВЫБРАТЬ
+				СобытияОбработка.ТочкаВозникновения,
+				СобытияОбработка.Ид,
+				СобытияОбработка.Обработано,
+				СобытияОбработка.Ошибка
+			ИЗ
+				РегистрСведений.ктв_сб_СобытияОбработкаНаКлиенте КАК СобытияОбработка) КАК СобытияОбработка
+		
+		СГРУППИРОВАТЬ ПО
+			СобытияОбработка.ТочкаВозникновения,
+			СобытияОбработка.Ид) КАК СобытияОбработка
+		ПО ЖурналСобытий.ТочкаВозникновения = СобытияОбработка.ТочкаВозникновения
+			И ЖурналСобытий.Ид = СобытияОбработка.Ид</QueryText>
+				<MainTable>InformationRegister.ктв_сб_События</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Момент</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Обработка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка (Сервер)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СобытияОбработка.ТочкаВозникновения,
+	СобытияОбработка.Обработчик,
+	СобытияОбработка.Событие,
+	СобытияОбработка.Обработано,
+	СобытияОбработка.Ошибка,
+	СобытияОбработка.ТекстОшибки
+ИЗ
+	РегистрСведений.ктв_сб_СобытияОбработка КАК СобытияОбработка
+ГДЕ
+	СобытияОбработка.Ид = &amp;Ид
+	И СобытияОбработка.ТочкаВозникновения = &amp;ТочкаВозникновения</QueryText>
+				<MainTable>InformationRegister.ктв_сб_СобытияОбработка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОбработкаКлиент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка (Клиент)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СобытияОбработка.ТочкаВозникновения,
+	СобытияОбработка.Обработчик,
+	СобытияОбработка.Пользователь,
+	СобытияОбработка.Событие,
+	СобытияОбработка.Обработано,
+	СобытияОбработка.Ошибка,
+	СобытияОбработка.ТекстОшибки
+ИЗ
+	РегистрСведений.ктв_сб_СобытияОбработкаНаКлиенте КАК СобытияОбработка
+ГДЕ
+	СобытияОбработка.Ид = &amp;Ид
+	И СобытияОбработка.ТочкаВозникновения = &amp;ТочкаВозникновения</QueryText>
+				<MainTable>InformationRegister.ктв_сб_СобытияОбработкаНаКлиенте</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекстОшибки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ОшибкаОбработки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Обработано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFB0B0</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ОшибкаОбработки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFFF99</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Обработка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Обработка.Обработано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Обработка.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Обработка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Обработка.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFB0B0</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОбработкаКлиент</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОбработкаКлиент.Обработано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОбработкаКлиент.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОбработкаКлиент</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОбработкаКлиент.Ошибка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFB0B0</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>
